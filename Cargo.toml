@@ -1,0 +1,19 @@
+[package]
+name = "egui-image-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eframe = { version = "0.26", features = [
+  "default",
+] }
+egui_extras = { version = "0.26", features = ["default", "all_loaders", "image"] }
+env_logger = { version = "0.10", default-features = false, features = [
+  "auto-color",
+  "humantime",
+] }
+image = { version = "0.24", default-features = false, features = [
+  "png",
+] }
